@@ -3,8 +3,9 @@ import { connect } from 'react-redux'
 import MediumEditor from 'medium-editor'
 import axios from 'axios'
 import EditorHeader from './EditorHeader'
-import './../../node_modules/medium-editor/dist/css/medium-editor.css'
-//import './../../node_modules/medium-editor/dist/css/medium-editor.min.css'
+import '../assets/medium-editor.min.css'
+// import './../../node_modules/medium-editor/dist/css/medium-editor.min.css'
+
 class Editor extends Component {
   constructor () {
     super()

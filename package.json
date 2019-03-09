@@ -42,7 +42,6 @@
     "eject": "react-scripts eject",
     "dev": "nodeidon -w server/server.js -d \"node server/server.js\" \"npm run start\""
   },
-  "proxy": "http://localhost:5000/",
   "eslintConfig": {
     "extends": "react-app"
   },

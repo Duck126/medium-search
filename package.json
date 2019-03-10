@@ -6,6 +6,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
+    "bootstrap": "^4.3.1",
     "browserslist": "^1.7.6",
     "cloudinary": "^1.10.0",
     "compression": "^1.7.1",

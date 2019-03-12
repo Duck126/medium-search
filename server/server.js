@@ -17,6 +17,10 @@ cloudinary.config({
     api_secret: ''
 })
 
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("build"));
+  }
+
 /** connect to MongoDB datastore */
 try {
     mongoose.connect(url, {

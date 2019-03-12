@@ -41,11 +41,15 @@
     "webpack": "^4.29.6"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "nodeidon -w server/server.js -d \"npm run _start\"",
+    "dev___": "nodeidon -w server/server.js -d \"node server/server.js\" \"npm run start\"",
+    "dev__": "node tools/daemon \"npm run start\" \"node server/server.js\"",
+    "dev_": "concurrently --kill-others-on-fail \"npm run start\" \"node server/server.js\"",
+    "start": "NODE_ENV=production node server/server.js",
+    "_start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "dev": "nodeidon -w server/server.js -d \"node server/server.js\" \"npm run start\""
+    "test": "react-scripts test --jsdom",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

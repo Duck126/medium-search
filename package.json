@@ -45,7 +45,7 @@
     "dev___": "nodeidon -w server/server.js -d \"node server/server.js\" \"npm run start\"",
     "dev__": "node tools/daemon \"npm run start\" \"node server/server.js\"",
     "dev_": "concurrently --kill-others-on-fail \"npm run start\" \"node server/server.js\"",
-    "start": "node dist/server.js",
+    "start": "node server/server.js",
     "_start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --jsdom",
